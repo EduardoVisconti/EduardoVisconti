@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Eduardo</h1>
-<h3 align="center">I'm a self-taught passionate Front-End Developer</h3>
+<h3 align="center">I'm a self-taught passionate Frontend Developer</h3>
 
 - 💼 Frontend Developer **Open to Work**
 
