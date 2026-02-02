@@ -12,7 +12,7 @@ I build real-world projects using **Next.js, TypeScript, Firebase**, and scalabl
 
 ### 🧩 Featured Projects
 
-- **Equipment Dashboard** — Next.js 14, Firebase, React Query  
+- **AssetOps** — Next.js 14, Firebase, React Query  
 - **OZYN Fit** — Fitness brand website & e-commerce concept  
 - **Sueli Repulho Website** — Professional landing page (React)  
 - **Movie Notes API** — REST API with Node.js  
