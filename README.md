@@ -6,10 +6,10 @@ I build systems where an LLM agent is part of the runtime, not a demo — with b
 ceilings, human approval gates, failure classification, and self-healing when an
 upstream source changes shape underneath it.
 
-**Now** — Software Engineer @ Vitruvix. Automated property-deed retrieval across
-3,000+ US counties (Python · FastAPI · PostgreSQL, with an autonomous agent layer),
-and the tooling that exposes it as an agent capability inside an internal AI hub
-(Next.js · TypeScript).
+**Now** — AI Engineer @ United Financial Resources, since April 2026. Automated
+property-deed retrieval across 3,000+ US counties (Python · FastAPI · PostgreSQL,
+with an autonomous agent layer), and the tooling that exposes it as an agent
+capability inside our internal AI Hub (Next.js · TypeScript).
 
 ---
 
@@ -30,6 +30,14 @@ records on a different vendor portal. An agent layer keeps that integration flee
 working as portals change, under hard budget caps and a human approval gate.
 Sole engineer — more test code than source, decisions recorded as ADRs, security
 gates on every PR.
+
+**AI Hub** — internal
+
+The multi-agent platform several departments run on. I build the client: Next.js
+and React 19, a custom NDJSON streaming protocol, the state architecture and the
+artifact rendering layer, against a Python/FastAPI/Agno backend with role-based
+access and a retrieval pipeline. 32 pull requests, shipped through review by three
+other engineers, against a suite of 1,300 unit and ~200 end-to-end tests.
 
 **Sueli Repulho** — [suelirepulho.com.br](https://suelirepulho.com.br)
 
