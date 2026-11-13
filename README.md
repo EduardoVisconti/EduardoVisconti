@@ -1,69 +1,78 @@
 ## Eduardo Visconti
 
-**Full-stack engineer · production AI systems.** Tampa, FL.
+**AI Engineer · Full-Stack.** Tampa, FL.
 
-I build systems where an LLM agent is part of the runtime, not a demo — with budget
-ceilings, human approval gates, failure classification, and self-healing when an
-upstream source changes shape underneath it.
+I build production systems where an LLM agent is part of the runtime, not a demo bolted to
+the side of one, and the apps people use them in.
 
-**Now** — AI Engineer @ United Financial Resources, since April 2026. Automated
-property-deed retrieval across 3,000+ US counties (Python · FastAPI · PostgreSQL,
-with an autonomous agent layer), and the tooling that exposes it as an agent
-capability inside our internal AI Hub (Next.js · TypeScript).
+**Now:** AI Developer at United Financial Resources since April 2026. I built the company's
+deed retrieval service from scratch and own it, and I lead the frontend of AI Hub, our
+internal multi-agent chat platform.
 
 ---
 
 ### Selected work
 
-**Forja** — [app.forjahybrid.com](https://app.forjahybrid.com) · iOS TestFlight
+**Deed retrieval platform** · private
 
-Offline-first hybrid-training app: guided strength sessions, cardio logging, daily
-habit protocol, progress history. The device is the source of truth and the server
-reconciles in the background, so the app stays fully usable with no connection.
-React Native (Expo SDK 54), TypeScript strict, Supabase Postgres with row-level
-security. Sole engineer.
+Built to replace a deed lookup that takes someone 10 to 30 minutes by hand. Given an owner
+and a county, it finds the county's records portal, logs in, runs the search, checks the PDF
+and returns the deed to AI Hub or the company CRM. Integrations for 70+ records-portal
+platforms, 840+ counties set up for automated search, 60 architecture decision records, and
+7,500+ tests run inside the shipped image on every pull request. When a portal breaks, an
+agent capped by iterations diagnoses it and proposes a fix, and a person approves any change
+to a county's validation or retrieval settings.
 
-**Deed retrieval platform** — private
+**AI Hub** · internal
 
-Automated retrieval of property deeds across 3,000+ US counties, each of which
-records on a different vendor portal. An agent layer keeps that integration fleet
-working as portals change, under hard budget caps and a human approval gate.
-Sole engineer — more test code than source, decisions recorded as ADRs, security
-gates on every PR.
+The company's internal multi-agent chat platform, used by about 60 employees. I lead the
+frontend (Next.js 16, React 19, TypeScript): I redesigned the whole interface on my own,
+fixed a streaming race that lost or merged up to 75% of agent replies, and wrote the MCP
+server that lets its agents search for deeds.
 
-**AI Hub** — internal
+**Forja** · [app.forjahybrid.com](https://app.forjahybrid.com) · [case study](https://github.com/EduardoVisconti/forja-case-study) · [open TestFlight beta](https://testflight.apple.com/join/bRREz5sS)
 
-The multi-agent platform several departments run on. I build the client: Next.js
-and React 19, a custom NDJSON streaming protocol, the state architecture and the
-artifact rendering layer, against a Python/FastAPI/Agno backend with role-based
-access and a retrieval pipeline. 32 pull requests, shipped through review by three
-other engineers, against a suite of 1,300 unit and ~200 end-to-end tests.
+A training app for people who mix lifting, HYROX, functional work and running: workouts,
+cardio, programs, habits, body weight and progress in one app, with the whole workout on one
+screen like a spreadsheet. The phone holds the data and syncs to Supabase in the background,
+so it works with no connection. Built solo with 5,000+ tests. React Native, Expo, TypeScript.
 
-**Sueli Repulho** — [suelirepulho.com.br](https://suelirepulho.com.br)
+**ConsciencIA** · client work
 
-Institutional site and sales pages for a psychology practice, with the paid-course
-area delegated to an external platform. Astro, SEO- and mobile-first, shipped under
-tight shared-hosting constraints that drove the whole architecture.
+A private journaling app where a psychology practice's patients get AI feedback on what they
+write. Entries are encrypted at rest, consent is given item by item, and the AI key never
+reaches the browser. Astro, PHP, MySQL.
 
-**LeadFlow** — [live](https://leadflow-electronics.vercel.app) · [repo](https://github.com/EduardoVisconti/leadflow)
+**Psychology practice site** · client work
 
-CRM for an electronics reseller — Kanban pipeline, contacts, product catalog, and AI
-deal analysis. Next.js · TypeScript · Supabase · Gemini.
+The website and course sales pages for a clinical psychologist: a static Astro build for a
+shared host with no Node, and a PHP lead form with a honeypot, an origin check, dedup and two
+rate limits.
+
+**AssetOps** · [live demo](https://asset-ops.vercel.app/login) · [repo](https://github.com/EduardoVisconti/AssetOps)
+
+Equipment management with role-based access, maintenance scheduling and an append-only audit log.
+Next.js, TypeScript, Firebase.
+
+**LeadFlow** · [repo](https://github.com/EduardoVisconti/leadflow)
+
+CRM for an electronics reseller: Kanban pipeline, contacts, product catalog and AI deal
+analysis. Next.js, TypeScript, Supabase, Gemini.
 
 ---
 
 ### Stack
 
-**Languages** — Python · TypeScript · SQL (PL/pgSQL)
+**Languages:** Python · TypeScript · SQL
 
-**Backend** — FastAPI · asyncio · PostgreSQL (RLS) · Playwright · pytest
+**Backend:** FastAPI · asyncio · PostgreSQL (row-level security) · NATS JetStream · Playwright · pytest
 
-**Frontend** — React · React Native (Expo) · Next.js · Tailwind
+**Frontend:** React · React Native (Expo) · Next.js · Tailwind
 
-**AI** — Anthropic & OpenAI tool-use · MCP · RAG with RBAC · budget and approval control
+**AI:** LLM agents and tool calling · MCP · LiteLLM with self-hosted models
 
-**Infra** — Docker · GitHub Actions · Vercel · Supabase
+**Infra:** Docker · GitHub Actions · Vercel · Supabase
 
 ---
 
-[LinkedIn](https://www.linkedin.com/in/eduardo-visconti/) · [Portfolio](https://eduardo-visconti.vercel.app)
+[Portfolio](https://eduardo-visconti.vercel.app) · [LinkedIn](https://www.linkedin.com/in/eduardo-visconti/)
